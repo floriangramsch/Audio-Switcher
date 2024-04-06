@@ -3,7 +3,7 @@
 **Small program to change the Audio Output in Windows**
 - [Audio Switcher](#audio-switcher)
   - [Dependencies](#dependencies)
-  - [Get Indexes](#get-indexes)
+  - [Get IDs](#get-ids)
   - [Edit the source](#edit-the-source)
   - [Make the Switcher Exe](#make-the-switcher-exe)
   - [Icons](#icons)
@@ -14,20 +14,20 @@
 - [AudioDeviceCmdlets](https://github.com/frgnca/AudioDeviceCmdlets)
 - [PS2Exe](https://github.com/MScholtes/PS2EXE)
 
-## Get Indexes
-To get the Indexes of your outputs either run.
+## Get IDs
+To get the IDs of your outputs either run.
 ```
-.\src\getIndex.ps1
+.\src\getID.ps1
 ```
 or convert it to an exe and then run it. To make the executable look further down.
 ```
-Invoke-PS2EXE .\src\getIndex.ps1 .\GetIndex.exe -NoConsole -iconFile .\icons\id.ico
+Invoke-PS2EXE .\src\getID.ps1 .\GetID.exe -NoConsole -iconFile .\icons\id.ico
 ```
 
 ## Edit the source
-Look for the ID variables and change the numbers to the corresponding indexes. Here you could change the 2 into your index.
+Look for the ID variables and change the numbers to the corresponding IDs. 
 ```
-$lautsprecher_id = 2
+$speaker = '{0.0.0.00000000}.{95c09db4-60e4-4916-8cb1-b9f339c0740b}'
 ```
 
 ## Make the Switcher Exe
@@ -39,7 +39,7 @@ Invoke-PS2EXE .\src\switchAudio.ps1 .\AudioSwitcher.exe -NoConsole -iconFile .\i
 ## Icons
 **The icons have to be .ico files.**
 [Headphones Icon](https://www.iconarchive.com/show/android-lollipop-icons-by-dtafalonso/Headphones-Play-Music-icon.html)
-[Index Icon](https://www.iconarchive.com/show/flat-ios7-style-documents-icons-by-iynque/id-icon.html)
+[ID Icon](https://www.iconarchive.com/show/flat-ios7-style-documents-icons-by-iynque/id-icon.html)
 
 ## To DOs
 - [ ] Add userfriendliness
