@@ -44,3 +44,5 @@ Invoke-PS2EXE .\src\switchAudio.ps1 .\AudioSwitcher.exe -NoConsole -iconFile .\i
 ## To DOs
 - [ ] Add userfriendliness
 - [ ] Automatically detect Indexes of Output Devices
+- [ ] Shortcuts
+- [ ] Ability to change the mute state
