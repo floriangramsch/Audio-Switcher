@@ -7,8 +7,8 @@ function Switch-AudioOutput {
 
     # Setting the IDs
     $speaker_id = '{0.0.0.00000000}.{95c09db4-60e4-4916-8cb1-b9f339c0740b}'
-    $chat_id = '{0.0.0.00000000}.{f40c6c9b-4572-4b93-8b0b-7b6cad9e393d}' #Headset
-    $game_id = '{0.0.0.00000000}.{f5d66610-546f-4a91-b994-977bbd843869}' #Headset
+    $chat_id = '{0.0.0.00000000}.{494aa77e-257f-4334-a1f8-acdceee33b1d}' #Headset
+    $game_id = '{0.0.0.00000000}.{3ac6ad20-afb2-4e26-b0ad-d6e43bb2ab62}' #Headset
 
     $speaker = Get-AudioDevice -Id $speaker_id
     $chat = Get-AudioDevice -Id $chat_id
